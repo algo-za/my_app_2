@@ -52,7 +52,6 @@ symbol_data = calculate_atr(symbol_data)
 last_atr = symbol_data['ATR'].iloc[-1]
 print(last_atr)
 
-
 def get_current_price(symbol):
     ticker = yf.Ticker(symbol)
     todays_data = ticker.history(period='1D')
